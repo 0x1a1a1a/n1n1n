@@ -30,7 +30,7 @@
 
     @font-face {
       font-family: "IBM Plex Mono";
-      src: url("/fonts/IBMPlexMono-Bold.woff2") format("woff2");
+      src: url("/fonts/IBMPlexMono-SemiBold.woff2") format("woff2");
       font-weight: bold;
       font-style: normal;
     }
@@ -44,7 +44,7 @@
 
     @font-face {
       font-family: "IBM Plex Mono";
-      src: url("/fonts/IBMPlexMono-BoldItalic.woff2") format("woff2");
+      src: url("/fonts/IBMPlexMono-SemiBoldItalic.woff2") format("woff2");
       font-weight: bold;
       font-style: italic;
     }
@@ -53,7 +53,7 @@
       font-family: IBM Plex Mono;
       font-size: 14px;
       line-height: 1.5;
-      color: #e0e0e0;
+      color: #f0f0f0;
       background-image: url('img/bg-5.gif');
       /* background-color: #1a1a1a; */
       max-width: 600px;
@@ -61,18 +61,35 @@
       padding: 4px 12px;
     }
 
-    h1, h2, h3, h4 {
-      margin: 8px 0 12px 0;
+    a {
+      color: #00c0c0;
+      /* color: #00c0c0; */
+      /* font-weight: bold; */
+    }
+
+    h1 {
+      font-weight: 600;
+      margin: 24px 0 0 0;
+    }
+
+    h2, h3, h4 {
+      font-weight: 600;
+      margin: 0 0 12px 0;
     }
 
     h1 + h4 {
       margin-top: 0;
+      margin-bottom: 16px;
     }
 
     article {
       background-color: #1a1a1a;
-      border-radius: 8px;
-      padding: 12px;
+      border-radius: 16px;
+      padding: 12px 16px;
+    }
+
+    section, footer {
+      padding: 8px 28px;
     }
 
     p {
@@ -82,6 +99,7 @@
     }
 
     hr {
+      border: 2px #1a1a1a;
       margin: 16px 0;
     }
 
@@ -98,47 +116,111 @@
   </style>
 </head>
 
-<header>
-  <h1>1Нескінченний запит</h1>
-  <h4><i>Знахідки українського універсального спеціаліста. В форматі Web1</i></h4>
-</header>
-
-<section>
-  <p>
-    <b>Контекст</b>: Колекція артефактів
-    <br>
-    <b>Дата крайнього оновлення</b>: 2025-12-09
-    <br>
-    <b>Статус</b>: Активний. Але, звісно, вічно under construction
-    <p>
-     <a href="http://textfiles.com/underconstruction/"><img src="img/under-construction-icon.gif" alt="Under construction icon"><img src="img/under-construction-line.gif" alt="Under construction line"><img src="img/under-construction-icon.gif" alt="Under construction icon"><br><img src="img/under-construction-icon.gif" alt="Under construction icon"><img src="img/under-construction-line.gif" alt="Under construction line"><img src="img/under-construction-icon.gif" alt="Under construction icon"></a>
-    </p>
-  </p>
-</section>
-
-<hr>
-
-<nav>
-  <p style="margin-bottom: 2em;">
-    <a href="#articles"><img src="img/icon-articles-2.gif" width="64" height="64" alt="Articles icon"></a>
-    <br>
-    <a href="#articles">Статті</a>
-  </p>
-  <p style="margin-bottom: 2em;">
-    <a href="#web1"><img src="img/globe.gif" alt="Globe icon"></a>
-    <br>
-    <a href="#web1">Про Web1</a>
-  </p>
-  <p style="margin-bottom: 2em;">
-    <a href="#list">Список улюблених пристроїв</a>
-  </p>
-</nav>
-
-<hr>
-
 <body>
+
+  <header>
+    <h1>Нескінченний запит</h1>
+    <h4><i>Знахідки українського універсального спеціаліста. В форматі Web1</i></h4>
+  </header>
+
+  <hr>
+
+  <nav>
+    <p style="margin-bottom: 2em;">
+      <a href="#articles"><img src="img/icon-articles-3.gif" width="128" height="128" alt="Articles icon"></a>
+      <br>
+      <a href="#articles">Статті</a>
+    </p>
+    <p style="margin-bottom: 2em;">
+      <a href="#web1"><img src="img/globe.gif" alt="Globe icon"></a>
+      <br>
+      <a href="#web1">Про Web1</a>
+    </p>
+    <p style="margin-bottom: 2em;">
+      <a href="#devices"><img src="img/icon-gamepad-3.gif" alt="SNES gamepad icon"></a>
+      <br>
+      <a href="#devices">Список улюблених пристроїв</a>
+    </p>
+  </nav>
+
   <main>
-    <section id="#articles">
+
+      <article>
+        <h2 id="2025-12-23-01">
+          2025-12-23 - Підсумки 2025-го року: Альбом року
+        </h2>
+        <p>
+          Зібрав список музичних альбомів, що мені найбільше сподобалися цього року
+        </p>
+        <h3>
+          Номінанти
+        </h3>
+        <p>
+        <ul>
+          <li>
+            2025-01-13 - Luigi Tozzi, “Sentient” - <a href="https://hypnus.bandcamp.com/album/sentient">Послухати на Bandcamp</a>
+          </li>
+          <li>
+            2025-03-28 - Rrose, “2 or 3 Drops of Height Have Nothing to do With Savagery” - <a href="https://rrose.bandcamp.com/album/2-or-3-drops-of-height-have-nothing-to-do-with-savagery">Bandcamp</a>
+          </li>
+          <li>
+            2025-03-28 - Sandwell District, “End Beginnings” - <a href="https://sandwelldistrict.bandcamp.com/album/end-beginnings">Bandcamp</a>
+          </li>
+          <li>
+            2025-04-11 - .VRIL, “Crystal Cell Energy” - <a href="https://vrilofficial.bandcamp.com/album/vril-crystal-cell-energy">Bandcamp</a>
+          </li>
+          <li>
+            2025-05-05 - Legowelt, “Synths Below Sea Level” - <a href="https://legowelt.bandcamp.com/album/synths-below-sea-level">Bandcamp</a>
+          </li>
+          <li>
+            2025-05-09 - Len Faki, “Zig Zag” - <a href="https://lenfaki.bandcamp.com/album/zig-zag">Bandcamp</a>
+          </li>
+          <li>
+            2025-05-23 - Quelza, “Pensa Poetico” - <a href="https://dekmantel.bandcamp.com/album/pensa-poetico">Bandcamp</a>
+          </li>
+          <li>
+            2025-05-23 - Claudio PRC, “Self Surrender” - <a href="https://claudioprc.bandcamp.com/album/self-surrender">Bandcamp</a>
+          </li>
+          <li>
+            2025-05-30 - Ostgut Ton, “Klubnacht 01” - <a href="https://ostgut.bandcamp.com/album/ostgut-ton-klubnacht-01">Bandcamp</a>
+          </li>
+          <li>
+            2025-06-20 - Donato Dozzy & Sabla, “Morpho” - <a href="https://sabla.bandcamp.com/album/morpho">Bandcamp</a>
+          </li>
+          <li>
+            2025-07-04 - Na Nich, “White Soil” - <a href="https://nanich.bandcamp.com/album/white-soil-ep">Bandcamp</a>
+          </li>
+          <li>
+            2025-07-11 - Answer Code Request & Paul Claude, “Sequel” - <a href="https://acr-label.bandcamp.com/album/sequel">Bandcamp</a>
+          </li>
+          <li>
+            2025-07-25 - Inigo Kennedy, “Ghost Reaction” - <a href="https://inigokennedy.bandcamp.com/album/ghost-reaction">Bandcamp</a>
+          </li>
+          <li>
+            2025-08-01 - Blackploid, “Cosmic Drama” - <a href="https://centralprocessingunit.bandcamp.com/album/cosmic-drama">Bandcamp</a>
+          </li>
+          <li>
+            2025-09-19 - Na Nich, “Your Curves” - <a href="https://rhythmburo.bandcamp.com/album/rb011-na-nich-your-curves-ep">Bandcamp</a>
+          </li>
+          <li>
+            2025-09-19 - Vera Logdanidi, “To All That We Lose And All We Fight For” - <a href="https://rhythmburo.bandcamp.com/album/rb012-vera-logdanidi-to-all-that-we-lose-and-all-we-fight-for-lp">Bandcamp</a>
+          </li>
+          <li>
+            2025-09-26 - Brendon Moeller & Beat Pharmacy & Echologist, “Echocord Excursions” - <a
+              href="https://brendonmoellerechologistbeatpharmacy.bandcamp.com/album/echocord-excursions">Bandcamp</a>
+          </li>
+          <li>
+            2025-12-05 - Voices From The Lake, “II” - <a href="https://sandwelldistrict.bandcamp.com/album/end-beginnings">Bandcamp</a>
+          </li>
+        </ul>
+        </p>
+        <h3>
+          Переможець
+        </h3>
+        <p>Sandwell District, “End Beginnings”. Мені хотілося б обрати більш життєрадісні альбоми, але наразі час, на жаль, саме такий</p>
+      </article>
+
+      <hr>
 
       <article>
         <h2 id="2025-12-18-01">
@@ -152,15 +234,33 @@
         </h3>
         <p>
           <ul>
-            <li>2025-01-16 - <a href="https://en.wikipedia.org/wiki/Severance_(TV_series)">Severance, season 2</a></li>
-            <li>2025-05-25 - <a href="https://en.wikipedia.org/wiki/List_of_Rick_and_Morty_episodes#Season_8_(2025)">Rick and Morty, season 8</a></li>
-            <li>2025-07-11 - <a href="https://en.wikipedia.org/wiki/Dexter:_Resurrection">Dexter: Resurrection, season 1</a></li>
-            <li>2025-07-23 - <a href="https://en.wikipedia.org/wiki/South_Park_season_27">South Park, season 27</a></li>
-            <li>2025-08-06 - <a href="https://en.wikipedia.org/wiki/Wednesday_(TV_series)">Wednesday, season 2</a></li>
-            <li>2025-08-12 - <a href="https://en.wikipedia.org/wiki/Alien:_Earth">Alien: Earth, season 1</a></li>
-            <li>2025-09-28 - <a href="https://en.wikipedia.org/wiki/The_Simpsons_season_37">Simpsons, season 37</a></li>
-            <li>2025-10-15 - <a href="https://en.wikipedia.org/wiki/South_Park_season_28">South Park, season 28</a></li>
-            <li>2025-11-07 - <a href="https://en.wikipedia.org/wiki/Pluribus_(TV_series)">Pluribus, season 1</a></li>
+            <li>
+              2025-01-16 - Severance, season 2 - <a href="https://en.wikipedia.org/wiki/Severance_(TV_series)">Wikipedia</a>
+            </li>
+            <li>
+              2025-05-25 - Rick and Morty, season 8 - <a href="https://en.wikipedia.org/wiki/List_of_Rick_and_Morty_episodes#Season_8_(2025)">Wikipedia</a>
+            </li>
+            <li>
+              2025-07-11 - Dexter: Resurrection, season 1 - <a href="https://en.wikipedia.org/wiki/Dexter:_Resurrection">Wikipedia</a>
+            </li>
+            <li>
+              2025-07-23 - South Park, season 27 - <a href="https://en.wikipedia.org/wiki/South_Park_season_27">Wikipedia</a>
+            </li>
+            <li>
+              2025-08-06 - Wednesday, season 2 - <a href="https://en.wikipedia.org/wiki/Wednesday_(TV_series)">Wikipedia</a>
+            </li>
+            <li>
+              2025-08-12 - Alien: Earth, season 1 - <a href="https://en.wikipedia.org/wiki/Alien:_Earth">Wikipedia</a>
+            </li>
+            <li>
+              2025-09-28 - Simpsons, season 37 - <a href="https://en.wikipedia.org/wiki/The_Simpsons_season_37">Wikipedia</a>
+            </li>
+            <li>
+              2025-10-15 - South Park, season 28 - <a href="https://en.wikipedia.org/wiki/South_Park_season_28">Wikipedia</a>
+            </li>
+            <li>
+              2025-11-07 - Pluribus, season 1 - <a href="https://en.wikipedia.org/wiki/Pluribus_(TV_series)">Wikipedia</a>
+            </li>
           </ul>
         </p>
         <h3>
@@ -173,13 +273,13 @@
 
       <article>
         <h2 id="2025-12-09-01">
-          2025-12-10 - II by Voices From The Lake
+          2025-12-10 - Voices From The Lake, “II”
         </h2>
         <p>
-          <a href="https://voicesfromthelake.bandcamp.com/album/ii">Послухати на Bandcamp</a>
+          Неймовірно красиве ембієнт-техно від італійців Донато Скарамуцці (відомого як Donato Dozzi) та Джузеппе Тіллієчі
         </p>
         <p>
-          Неймовірно красиве ембієнт-техно від італійців Донато Скарамуцці (відомого як Donato Dozzi) та Джузеппе Тіллієчі
+          <a href="https://voicesfromthelake.bandcamp.com/album/ii">Bandcamp</a>
         </p>
       </article>
 
@@ -265,6 +365,9 @@
     <a href="https://www.w3.org/"><img src="img/letsshare.png" width="165" height="138" alt="Image with “Let’s Share What We Know - World Wide Web” label"></a>
     <hr>
     <a href="https://www.nyan.cat/"><img src="img/nyan-cat.gif" width="83" height="33" alt="Image with flying Nyan Cat"></a>
+    <hr>
+    <a href="http://textfiles.com/underconstruction/"><img src="img/under-construction-icon.gif"
+          alt="Under construction icon">
     <hr>
     2025 &copy; ТОВ ФОП ОСББ “Нескінченний запит”
     <br>
