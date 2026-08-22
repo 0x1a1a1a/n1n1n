@@ -11,7 +11,7 @@ done
 
 cp -r css public/
 cp -r fonts public/
-cp -r img public/
+[ -d img ] && cp -r img public/
 cp CNAME public/ 2>/dev/null || true
 
 echo "Done"
