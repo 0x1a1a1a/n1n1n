@@ -1,0 +1,38 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="800"
+  height="50"
+  viewBox="0 0 800 50"
+  preserveAspectRatio="none"
+>
+  <filter id="tiled">
+    <feTurbulence
+      x="0"
+      y="0"
+      width="800"
+      height="50"
+      baseFrequency="0.3"
+      numOctaves="8"
+      seed="21"
+      stitchTiles="stitch"
+      result="tile"
+    />
+    <feTile in="tile" result="tiled"/>
+    <feColorMatrix
+      in="tiled"
+      values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0 -10"
+    >
+      <animate
+        attributeName="values"
+        values="
+          0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 40 -20;
+          0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 60 -10;
+          0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 40 -20;
+        "
+        dur="15s"
+        repeatCount="indefinite"
+      />
+    </feColorMatrix>
+  </filter>
+  <rect width="100%" height="100%" filter="url(#tiled)"/>
+</svg>
