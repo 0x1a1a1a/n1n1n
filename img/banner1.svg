@@ -1,15 +1,15 @@
 <svg
   xmlns="http://www.w3.org/2000/svg"
-  width="800"
+  width="600"
   height="50"
-  viewBox="0 0 800 50"
+  viewBox="0 0 600 50"
   preserveAspectRatio="none"
 >
   <filter id="tiled">
     <feTurbulence
       x="0"
       y="0"
-      width="800"
+      width="6  00"
       height="50"
       baseFrequency="0.3"
       numOctaves="8"
