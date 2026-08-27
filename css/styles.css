@@ -55,44 +55,28 @@ h1 {
   font-weight: 600;
   font-size: 24px;
   font-feature-settings: "ss01";
+  padding: 16px 0;
 }
 
 h2 {
   font-weight: 600;
   font-size: 18px;
   font-feature-settings: "ss01";
+  padding: 0 0 16px;
 }
 
 h3 {
   font-weight: 600;
   font-size: 16px;
   font-feature-settings: "ss01";
+  padding: 0 0 16px;
 }
 
 h4 {
   font-weight: 600;
   font-size: 14px;
   font-feature-settings: "ss01";
-}
-
-h1 + h1 {
-  margin-top: 0;
-}
-
-h2 + h2 {
-  margin-top: 0;
-}
-
-h3 + h3 {
-  margin-top: 0;
-}
-
-h4 + h4 {
-  margin-top: 0;
-}
-
-h2 + h3 {
-  margin-top: 16px;
+  padding: 0 0 16px;
 }
 
 header, article {
@@ -102,13 +86,17 @@ header, article {
   padding: 16px 16px;
 }
 
-article p {
-  margin-top: 24px;
+article p + p {
+  margin-top: 20px;
 }
 
-article .item {
+.changelog p + p {
+  margin-top: 40px;
+}
+
+.changelog .item {
   display: block;
-  margin-top: 6px;
+  margin-top: 4px;
 }
 
 nav {
@@ -117,12 +105,6 @@ nav {
 
 section, footer {
   padding: 8px 16px;
-}
-
-p {
-  /* display: block; */
-  /* background-color: #1a1a1a; */
-  margin: 8px 0 0;
 }
 
 hr {
