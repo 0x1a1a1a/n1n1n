@@ -122,9 +122,9 @@ article p + p {
   margin-top: 48px;
 }
 
-.changelog .item {
+.item {
   display: block;
-  margin-top: 8px;
+  margin-top: 12px;
 }
 
 nav {
