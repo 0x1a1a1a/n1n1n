@@ -115,16 +115,16 @@ header, article {
 }
 
 article p + p {
-  margin-top: 20px;
+  margin-top: 24px;
 }
 
 .changelog p + p {
-  margin-top: 40px;
+  margin-top: 48px;
 }
 
 .changelog .item {
   display: block;
-  margin-top: 4px;
+  margin-top: 8px;
 }
 
 nav {
