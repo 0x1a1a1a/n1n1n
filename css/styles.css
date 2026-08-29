@@ -11,13 +11,40 @@
 
 /* Mapping of available weights for Cascadia Code Italic: 200, 300 ,350, 400, 500, 600, 700 */
 
-.extralight { font-weight: 200; font-style: italic; }
-.light      { font-weight: 300; font-style: italic; }
-.semilight  { font-weight: 350; font-style: italic; }
-.regular    { font-weight: 400; font-style: italic; }
-.medium     { font-weight: 500; font-style: italic; }
-.semibold   { font-weight: 600; font-style: italic; }
-.bold       { font-weight: 700; font-style: italic; }
+.extralight {
+  font-weight: 200;
+  font-style: italic;
+}
+
+.light {
+  font-weight: 300;
+  font-style: italic;
+}
+
+.semilight {
+  font-weight: 350;
+  font-style: italic;
+}
+
+.regular {
+  font-weight: 400;
+  font-style: italic;
+}
+
+.medium {
+  font-weight: 500;
+  font-style: italic;
+}
+
+.semibold {
+  font-weight: 600;
+  font-style: italic;
+}
+
+.bold {
+  font-weight: 700;
+  font-style: italic;
+}
 
 *,
 ::before,
@@ -47,7 +74,7 @@ body {
 }
 
 a {
-  color: #0000cc;
+  color: #0000ee;
   /* color: #0020a0; */
   /* font-weight: bold; */
 }
