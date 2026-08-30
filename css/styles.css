@@ -180,7 +180,7 @@ ul {
   color: #a0a0a0;
 }
 
-.commented {
+.tooltip-text {
   border: none;
   background: none;
   padding: 0;
@@ -190,7 +190,10 @@ ul {
   color: inherit;
 }
 
-[popover] {
+.tooltip {
+  position-area: top;
+  position-try-fallbacks: bottom, left, right;
+  margin: 8px;
   border: 1px solid var(--text);
   border-radius: 4px;
   padding: 12px;
@@ -200,6 +203,6 @@ ul {
   font-size: 0.9em;
 }
 
-[popover]::backdrop {
+.note::backdrop {
   background: transparent;
 }
