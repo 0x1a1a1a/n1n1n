@@ -188,6 +188,7 @@ ul {
 }
 
 .tooltip {
+  margin: 0;
   border: 1px solid var(--text);
   border-radius: 4px;
   padding: 16px;
