@@ -197,8 +197,3 @@ ul {
   max-width: 400px;
   font-size: 0.9em;
 }
-}
-
-.note::backdrop {
-  background: transparent;
-}
