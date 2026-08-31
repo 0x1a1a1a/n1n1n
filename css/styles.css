@@ -200,3 +200,7 @@ ul {
   border-left: 3px solid var(--text);
   font-size: 0.9em;
 }
+
+.commented {
+  display: inline;
+}
