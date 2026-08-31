@@ -9,10 +9,10 @@
     <feTurbulence
       x="0"
       y="0"
-      width="6  00"
+      width="600"
       height="50"
       baseFrequency="0.3"
-      numOctaves="8"
+      numOctaves="2"
       seed="21"
       stitchTiles="stitch"
       result="tile"
@@ -20,14 +20,29 @@
     <feTile in="tile" result="tiled"/>
     <feColorMatrix
       in="tiled"
-      values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0 -10"
+      values="
+        1 0 0 0 0
+        0 1 0 0 0
+        0 0 1 0 0
+        0 0 0 2 -10"
     >
       <animate
         attributeName="values"
         values="
-          0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 40 -20;
-          0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 60 -10;
-          0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 40 -20;
+          2 0 0 0 0
+          0 2 0 0 0
+          0 0 2 0 0
+          0 0 0 2 -5;
+
+          3 0 0 0 0
+          0 3 0 0 0
+          0 0 3 0 0
+          0 0 0 4 -0.25;
+
+          2 0 0 0 0
+          0 2 0 0 0
+          0 0 2 0 0
+          0 0 0 2 -10;
         "
         dur="15s"
         repeatCount="indefinite"

@@ -6,11 +6,19 @@
 /* Importing custom font (Cascadia Code) */
 
 @font-face {
-  font-family: "Cascadia Code";
+  font-family: "Cascadia Code Italic";
   src: url("/fonts/CascadiaCodeItalic.woff2") format("woff2-variations"),
        url("/fonts/CascadiaCodeItalic.woff2") format("woff2");
   font-weight: 200 700;
   font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Cascadia Code Regular";
+  src: url("/fonts/CascadiaCode.woff2") format("woff2-variations");
+  font-weight: 200 700;
+  font-style: normal;
   font-display: swap;
 }
 
@@ -62,7 +70,7 @@
 }
 
 body {
-  font-family: "Cascadia Code", monospace;
+  font-family: "Cascadia Code Italic", monospace;
   font-weight: 400;
   font-style: italic;
   font-size: 14px;
@@ -112,11 +120,62 @@ h4 {
   padding: 0 0 16px;
 }
 
+code {
+  border: 2px solid #202020;
+  padding: 0 2px;
+  border-radius: 4px;
+  background: transparent;
+  font-family: "Cascadia Code Regular", monospace;
+  font-style: normal;
+  font-weight: 400;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 header, article {
   background: #f5f5f5;
   border: 3px solid #fafafa;
   border-radius: 12px;
-  padding: 8px 12px;
+  padding: 8px 12px 16px;
 }
 
 article p + p {
@@ -134,6 +193,27 @@ article p + p {
 
 nav {
   padding: 16px 0 0;
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+nav {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+  padding: 16px 0 8px;
+}
+
+nav .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  width: 80px;
 }
 
 section, footer {
@@ -160,12 +240,35 @@ ul {
 
 /* Анімований банер нагорі. Виключення для WebKit, де не підтримується */
 
+.hero {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 50px;
+  margin: 0;
+  padding: 0;
+}
+
 .banner1-animated {
   display: block;
+  margin-top: 4px;
 }
 
 .banner1-static {
   display: none;
+  margin-top: 4px;
+}
+
+.hero .title {
+  position: absolute;
+  top: 26px;
+  left: 0px;
+  transform: translateY(-50%);
+  z-index: 2;
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  mix-blend-mode: difference;
 }
 
 @supports (hanging-punctuation: first) and (font: -apple-system-body) and (-webkit-appearance: none) {
@@ -173,35 +276,38 @@ ul {
   .banner1-static { display: block; }
 }
 
+/* Для елементів в підвалі */
+
 .dimmed {
   color: #a0a0a0;
 }
 
-.inline-details {
-  display: inline;
+/* Для блоку метаданих */
+
+.details-log {
+  margin-top: 16px;
+  text-align: center;
 }
 
-.inline-details summary {
+.details-log summary {
   display: inline;
   border-bottom: 1px dotted;
   cursor: pointer;
   list-style: none;
 }
 
-.inline-details summary::-webkit-details-marker {
+.details-log summary::-webkit-details-marker {
   display: none;
 }
 
-.inline-details[open] > *:not(summary) {
+.details-log[open] > *:not(summary) {
   display: block;
-  width: fit-content;
-  margin-top: 8px;
-  padding: 8px;
+  text-align: left;
+  display: block;
+  width: 240px;
+  margin: 8px auto 0;
+  padding: 12px;
   border-radius: 8px;
-  background: #ffffff;
+  background: #fcfcfc;
   font-size: 0.85em;
-}
-
-.commented {
-  display: inline;
 }

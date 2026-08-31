@@ -4,15 +4,15 @@
   <head>
 
     <meta charset="UTF-8">
-  
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-    <title>n1n1n - {{ page.title }}</title>
-  
+
+    <title>n1n1n - Журнал змін</title>
+
     <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
   
     <link rel="stylesheet" href="/css/styles.css">
-    
+
     <!-- Приховувати для інших сайтів, що відвідувач прийшов з n1n1n.com -->
     <meta name="referrer" content="no-referrer">
 
@@ -30,16 +30,18 @@
   <body>
 
     <header>
-      <object class="banner1-animated" type="image/svg+xml" data="/img/banner1-animated.svg" width="100%" height="50"></object>
-      <object class="banner1-static" type="image/svg+xml" data="/img/banner1-static.svg" width="100%" height="50"></object>
-      <h1>n1n1n.com</h1>
-      <p style="color: #808080;">Віртуальна оселька
-      <br>універсального спеціаліста</p>
+      <div class="hero">
+        <object class="banner1-animated" type="image/svg+xml" data="/img/banner1-animated.svg"></object>
+        <object class="banner1-static" type="image/svg+xml" data="/img/banner1-static.svg"></object>
+        <h1 class="title">n1n1n.com</h1>
+      </div>
+
+      <p style="color: #808080;">Віртуальний садочок універсального спеціаліста</p>
       <nav>
-        <p class="item"><img class="icon" src="/img/icon-phosphor-16x16-clipboard.svg" alt="">&nbsp;<a href="/">Журнал змін</a></p>
-        <p class="item"><img class="icon" src="/img/icon-phosphor-16x16-cabinet.svg" alt="">&nbsp;<a href="/notatky/">Нотатки</a></p>
-        <p class="item"><img class="icon" src="/img/icon-phosphor-16x16-globe.svg" alt="">&nbsp;<a href="/vpodobane/">Вподобане</a></p>
-        <p class="item"><img class="icon" src="/img/icon-phosphor-16x16-desk.svg" alt="">&nbsp;<a href="/uzhyvane/">Уживане</a></p>
+        <p class="item"><img class="icon" src="/img/icon-win31-200x200-clipboard.png" width="48" height="48" alt="Журнал змін"><a href="/">Журнал змін</a></p>
+        <p class="item"><img class="icon" src="/img/icon-win31-200x200-cabinet.png" width="48" height="48" alt="Нотатки"><a href="/notatky/">Нотатки</a></p>
+        <p class="item"><img class="icon" src="/img/icon-win31-200x200-globe.png" width="48" height="48" alt="Вподобане"><a href="/vpodobane/">Вподобане</a></p>
+        <p class="item"><img class="icon" src="/img/icon-win31-200x200-desktop.png" width="48" height="48" alt="Уживане"><a href="/uzhyvane/">Уживане</a></p>
       </nav>
     </header>
 
@@ -49,20 +51,35 @@
 
       <article class="changelog">
         <h2>Журнал змін</h2>
+        <p>
+          <span class="item">Додав метадані до записів/records в журнал змін. Активується по кліку на іконку з зображенням колоди, яку взяв з улюбленого ресурса <a href="https://phosphoricons.com/?q=log&size=16&weight=bold" target="_blank">Phosphor Icons</a>. Використав HTML-тег <code>&lt;details&gt;</code></span>
+        <details class="details-log">
+          <summary><img src="/img/icon-phosphor-16x16-log.svg" width="16" height="16" alt="Log icon"></summary>
+          <p>Дата:
+          <br>2026-08-31 18:08 EEST</p>
+          <p>Локація:
+          <br>Київ, Україна</p>
+          <p>В навушниках:
+          <br><a href="https://kr3stevebicknell.bandcamp.com/album/several-streams-of-thought-remixes">Steve Bicknell - The Reassurance Ritual [Rrose Remix]</a></p>
+          <p>Настрій:
+          <br>Частково в фармакологічному тумані</p>
+        </details>
+        </p>
 
-        <p><img src="/img/icon-win31-200x200-clipboard.png" width="100" height="100" alt="Remix of clipboard icon from Windows 3.11"></p>
         <p>
           <span class="item">Москалі продовжують тероризувати нас. Тепер їх тактика це безперервні атаки по одному БПЛА, як це відбувається в Харкові.</span>
           <span class="item">Сьогодні подумав про іронічний сценарій, коли терористи за допомогою нових моделей розробляють онкологію, що передається як інфекція. Вчені у відчаї надають іншій моделі необмежений доступ до інфраструктури, щоб впоратися з епідемією, і ця модель вирішує знищити все живе на планеті. Які часи, такі і думки.</span>
-          <span class="item">
-            <details class="inline-details">
-              <summary><img src="/img/icon-phosphor-16x16-log.svg" width="16" height="16" alt="Log icon"></summary>
-              <p><b>Метадані</b>
-              <br>2026-08-29 00:15
-              <br>Київ, Україна
-              <br>Грає в навушниках: <a href="https://inigokennedy.bandcamp.com/track/saturnine">Inigo Kennedy - Saturnine</a></p>
-            </details>
-          </span>
+          <details class="details-log">
+            <summary><img src="/img/icon-phosphor-16x16-log.svg" width="16" height="16" alt="Log icon"></summary>
+            <p>Дата:
+            <br>2026-08-29 00:15 EEST</p>
+            <p>Локація:
+            <br>Київ, Україна
+            <p>В навушниках:
+            <br><a href="https://inigokennedy.bandcamp.com/track/saturnine">Inigo Kennedy - Saturnine</a></p>
+            <p>Настрій:
+            <br>Не дуже</p>
+          </details>
         </p>
 
         <p>
@@ -75,40 +92,40 @@
           <span class="item">
             Плата Pi 5 в мене з’явилася два тижні тому, і я активно вивчаю її використання. Шрифт: <a href="https://github.com/scfried/soft-type-micro">Micro5</a>. До речі, всі поточні банери окрім IndieWeb я зробив вручну. Мабуть, треба буде зробити окрему нотатку про це
           </span>
-          <span class="item">
-            <details class="inline-details">
-              <summary><img src="/img/icon-phosphor-16x16-log.svg" width="16" height="16" alt="Log icon"></summary>
-              <p>2026-08-24 21:27
-              <br>Київ, Україна</p>
-            </details>
-          </span>
+          <details class="details-log">
+            <summary><img src="/img/icon-phosphor-16x16-log.svg" width="16" height="16" alt="Log icon"></summary>
+            <p>Дата:
+            <br>2026-08-24 21:27 EEST</p>
+            <p>Локація:
+            <br>Київ, Україна</p>
+          </details>
         </p>
 
         <p>
           <span class="item">
             Сьогодні 35-та річниця незалежності України від москалів. Слава Героям
           </span>
-          <span class="item">
-            <details class="inline-details">
-              <summary><img src="/img/icon-phosphor-16x16-log.svg" width="16" height="16" alt="Log icon"></summary>
-              <p>2026-08-24 13:21
-              <br>Київ, Україна</p>
-            </details>
-          </span>
+          <details class="details-log">
+            <summary><img src="/img/icon-phosphor-16x16-log.svg" width="16" height="16" alt="Log icon"></summary>
+            <p>Дата:
+            <br>2026-08-24 13:21 EEST
+            <p>Локація:
+            <br>Київ, Україна</p>
+          </details>
         </p>
 
         <p>
           <span class="item">Оновив структуру та стилі сайту, почав все наново</span>
-          <span class="item">
-            <details class="inline-details">
-              <summary><img src="/img/icon-phosphor-16x16-log.svg" width="16" height="16" alt="Log icon"></summary>
-              <p>2026-08-23 19:41
-              <br>Київ, Україна</p>
-            </details>
-          </span>
+          <details class="details-log">
+            <summary><img src="/img/icon-phosphor-16x16-log.svg" width="16" height="16" alt="Log icon"></summary>
+            <p>Дата:
+            <br>2026-08-23 19:41 EEST
+            <p>Локація:
+            <br>Київ, Україна</p>
+          </details>
         </p>
-      </article>
 
+      </article>
     </main>
 
     <hr>
