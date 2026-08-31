@@ -178,25 +178,25 @@ ul {
   color: #a0a0a0;
 }
 
-.tooltip-text {
-  border: none;
-  background: none;
-  padding: 0;
-  font: inherit;
-  border-bottom: 1px dotted;
-  color: inherit;
+.inline-details {
+  display: inline;
 }
 
-.tooltip {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  margin: 0;
-  border: 1px solid var(--text);
-  border-radius: 4px;
-  padding: 16px;
-  background: var(--bg);
-  color: var(--text);
-  max-width: 400px;
+.inline-details summary {
+  display: inline;
+  cursor: help;
+  border-bottom: 1px dotted;
+  list-style: none;
+}
+
+.inline-details summary::-webkit-details-marker {
+  display: none;
+}
+
+.inline-details[open] > *:not(summary) {
+  display: block;
+  margin-top: 8px;
+  padding: 8px;
+  border-left: 3px solid var(--text);
   font-size: 0.9em;
 }
