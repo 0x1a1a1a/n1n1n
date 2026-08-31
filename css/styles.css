@@ -183,8 +183,6 @@ ul {
 
 .inline-details summary {
   display: inline;
-  cursor: help;
-  border-bottom: 1px dotted;
   list-style: none;
 }
 
@@ -196,7 +194,7 @@ ul {
   display: block;
   width: fit-content;
   margin-top: 8px;
-  padding: 8px;
+  padding: 16px;
   border-radius: 16px;
   background: #ffffff;
   font-size: 0.85em;
