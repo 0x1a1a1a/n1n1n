@@ -130,6 +130,18 @@ code {
   font-weight: 400;
 }
 
+pre {
+  border: 2px solid #202020;
+  padding: 0 2px;
+  border-radius: 4px;
+  background: transparent;
+  font-family: "Cascadia Code Regular", monospace;
+  font-style: normal;
+  font-weight: 400;
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+
 ul {
   list-style-type: disc;
   margin-top: 0;
@@ -272,6 +284,13 @@ img {
 @supports (hanging-punctuation: first) and (font: -apple-system-body) and (-webkit-appearance: none) {
   .banner1-animated { display: none; }
   .banner1-static { display: block; }
+}
+
+/* Для скріншотів */
+
+.screenshot {
+  border: 4px solid #ccc;
+  border-radius: 8px;
 }
 
 /* Для елементів в підвалі */
