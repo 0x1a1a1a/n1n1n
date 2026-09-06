@@ -1,62 +1,6 @@
 :root {
-  --bg: #f0f0f0;
-  --text: #404040;
-}
-
-/* Importing custom font (Cascadia Code) */
-
-@font-face {
-  font-family: "Cascadia Code Italic";
-  src: url("/fonts/CascadiaCodeItalic.woff2") format("woff2-variations"),
-       url("/fonts/CascadiaCodeItalic.woff2") format("woff2");
-  font-weight: 200 700;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Cascadia Code Regular";
-  src: url("/fonts/CascadiaCode.woff2") format("woff2-variations");
-  font-weight: 200 700;
-  font-style: normal;
-  font-display: swap;
-}
-
-/* Mapping of available weights for Cascadia Code Italic: 200, 300 ,350, 400, 500, 600, 700 */
-
-.extralight {
-  font-weight: 200;
-  font-style: italic;
-}
-
-.light {
-  font-weight: 300;
-  font-style: italic;
-}
-
-.semilight {
-  font-weight: 350;
-  font-style: italic;
-}
-
-.regular {
-  font-weight: 400;
-  font-style: italic;
-}
-
-.medium {
-  font-weight: 500;
-  font-style: italic;
-}
-
-.semibold {
-  font-weight: 600;
-  font-style: italic;
-}
-
-.bold {
-  font-weight: 700;
-  font-style: italic;
+  --bg: #f8f8f8;
+  --text: #202020;
 }
 
 *,
@@ -67,12 +11,32 @@
 
 * {
   margin: 0;
+  padding: 0;
+}
+
+/* Importing custom font (Cascadia Code) */
+
+@font-face {
+  font-family: "Cascadia Code Regular";
+  src: url("/fonts/CascadiaCode.woff2") format("woff2-variations");
+  font-weight: 200 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Cascadia Code Italic";
+  src: url("/fonts/CascadiaCodeItalic.woff2") format("woff2-variations"),
+       url("/fonts/CascadiaCodeItalic.woff2") format("woff2");
+  font-weight: 200 700;
+  font-style: italic;
+  font-display: swap;
 }
 
 body {
-  font-family: "Cascadia Code Italic", monospace;
+  font-family: "Cascadia Code Regular", monospace;
   font-weight: 400;
-  font-style: italic;
+  font-style: normal;
   font-size: 14px;
   line-height: 1.5;
   color: var(--text);
@@ -186,10 +150,10 @@ ul {
 
 
 header, article {
-  background: #f5f5f5;
-  border: 3px solid #fafafa;
+  background: #fcfcfc;
+  border: 3px solid #ffffff;
   border-radius: 12px;
-  padding: 8px 12px 16px;
+  padding: 12px 16px 24px;
 }
 
 article p + p {
@@ -202,6 +166,9 @@ article p + p {
 
 .item {
   display: block;
+}
+
+.item + .item {
   margin-top: 12px;
 }
 
@@ -325,6 +292,6 @@ img {
   margin: 8px auto 0;
   padding: 12px;
   border-radius: 8px;
-  background: #fcfcfc;
+  background: #ffffff;
   font-size: 0.85em;
 }
