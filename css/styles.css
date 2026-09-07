@@ -34,9 +34,8 @@
 }
 
 body {
-  font-family: "Cascadia Code Regular", monospace;
+  font-family: "Cascadia Code Italic", monospace;
   font-weight: 400;
-  font-style: normal;
   font-size: 14px;
   line-height: 1.5;
   color: var(--text);
@@ -61,6 +60,21 @@ h1 {
   font-size: 24px;
   font-feature-settings: "ss01";
   padding: 0;
+  background: linear-gradient(90deg, #fcfcfc, #354ca0, #a9328d, #fcfcfc);
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient-flow 20s linear infinite;
+}
+
+@keyframes gradient-flow {
+  0%   { background-position: 100% 0%; }
+  100% { background-position: -100% 0%; }
+}
+
+.tagline {
+  color: #808080;
 }
 
 h2 {
@@ -85,30 +99,34 @@ h4 {
 }
 
 code {
-  border: 2px solid #202020;
-  padding: 0 2px;
+  padding: 1px 4px;
   border-radius: 4px;
-  background: transparent;
+  background: #eaeaea;
   font-family: "Cascadia Code Regular", monospace;
   font-style: normal;
   font-weight: 400;
 }
 
 pre {
-  border: 2px solid #202020;
-  padding: 0 2px;
+  margin: 16px 0;
+  padding: 8px 12px;
   border-radius: 4px;
-  background: transparent;
+  background: #f0f0f0;
   font-family: "Cascadia Code Regular", monospace;
   font-style: normal;
   font-weight: 400;
   white-space: pre-wrap;
-  word-break: break-all;
+  word-break: break-word;
 }
 
 ul {
-  list-style-type: disc;
+  list-style-type: none;
   margin-top: 0;
+  padding-inline-start: 0em;
+}
+
+li + li {
+  margin-top: 8px;
 }
 
 
@@ -148,35 +166,16 @@ ul {
 
 
 
-
-header, article {
+header, main > article {
   background: #fcfcfc;
   border: 3px solid #ffffff;
   border-radius: 12px;
   padding: 12px 16px 24px;
-}
-
-article p + p {
-  margin-top: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 .changelog p + p {
-  margin-top: 64px;
-}
-
-.item {
-  display: block;
-}
-
-.item + .item {
-  margin-top: 12px;
-}
-
-nav {
-  padding: 16px 0 0;
-  display: flex;
-  gap: 24px;
-  flex-wrap: wrap;
+  margin-top: 16px;
 }
 
 nav {
@@ -202,7 +201,7 @@ section, footer {
 }
 
 hr {
-  border: 2px #e0e0e0;
+  border: none;
   margin: 12px 0;
 }
 
@@ -212,45 +211,12 @@ img {
 }
 
 .icon {
-  vertical-align: text-bottom;
+  vertical-align: -0.2em;
 }
 
-/* Анімований банер нагорі. Виключення для WebKit, де не підтримується */
-
-.hero {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  height: 50px;
-  margin: 0;
-  padding: 0;
-}
-
-.banner1-animated {
-  display: block;
-  margin-top: 4px;
-}
-
-.banner1-static {
-  display: none;
-  margin-top: 4px;
-}
-
-.hero .title {
-  position: absolute;
-  top: 26px;
-  left: 0px;
-  transform: translateY(-50%);
-  z-index: 2;
-  margin: 0;
-  padding: 0;
-  color: #ffffff;
-  mix-blend-mode: difference;
-}
-
-@supports (hanging-punctuation: first) and (font: -apple-system-body) and (-webkit-appearance: none) {
-  .banner1-animated { display: none; }
-  .banner1-static { display: block; }
+.rating {
+  vertical-align: -0.15em;
+  display: inline-flex;
 }
 
 /* Для скріншотів */
@@ -268,30 +234,31 @@ img {
 
 /* Для блоку метаданих */
 
-.details-log {
-  margin-top: 16px;
+.log {
+  margin: 0 0 64px;
   text-align: center;
 }
 
-.details-log summary {
+.log summary {
   display: inline;
   border-bottom: 1px dotted;
   cursor: pointer;
   list-style: none;
 }
 
-.details-log summary::-webkit-details-marker {
+.log summary::-webkit-details-marker {
   display: none;
 }
 
-.details-log[open] > *:not(summary) {
+.log[open] > *:not(summary) {
   display: block;
   text-align: left;
-  display: block;
   width: 240px;
   margin: 8px auto 0;
   padding: 12px;
   border-radius: 8px;
-  background: #ffffff;
+  background: #fdfdfd;
+  border: 3px solid #ffffff;
   font-size: 0.85em;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }

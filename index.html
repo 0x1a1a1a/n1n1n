@@ -30,19 +30,17 @@
   <body>
 
     <header>
-      <div class="hero">
-        <object class="banner1-animated" type="image/svg+xml" data="/images/banner1-animated.svg"></object>
-        <object class="banner1-static" type="image/svg+xml" data="/images/banner1-static.svg"></object>
-        <h1 class="title">n1n1n.com</h1>
-      </div>
 
-      <p style="color: #808080;">Віртуальний садочок універсального спеціаліста</p>
+      <h1>n1n1n.com</h1>
+
+      <p class="tagline">Віртуальний садочок універсального спеціаліста</p>
 
       <nav>
         <p class="item"><img class="icon" src="/images/icon-win31-200x200-clipboard.png" width="48" height="48" alt="Журнал змін"><a href="/">Журнал змін</a></p>
         <p class="item"><img class="icon" src="/images/icon-win31-200x200-desktop.png" width="48" height="48" alt="Нотатки"><a href="/notes/">Нотатки</a></p>
         <p class="item"><img class="icon" src="/images/icon-win31-200x200-globe.png" width="48" height="48" alt="Вподобане"><a href="/liked/">Вподобане</a></p>
       </nav>
+
     </header>
 
     <hr>
@@ -50,130 +48,253 @@
     <main>
 
       <article class="changelog">
+
         <h2>Журнал змін</h2>
 
-        <p>
-          <span class="item">За останній місяць дізнався багато про <a href="https://en.wikipedia.org/wiki/Z_shell">zsh</a> (Z shell) - оболонку, що використовується в macOS. В якомусь відео на YouTube щодо налаштування чергового сервісу для свого Raspberry Pi 5 побачив незвичний вигляд терміналу macOS. Захотів налаштувати і собі через <code>~/.zshrc</code>. Наразі маю таку версію:</span>
-          <span class="item"><pre># Display custom prompt (on the left side)
+        <article>
+
+          <p>Щодо справи “Карфаген”, в нас треба традіційно викорчовувати з м’ясом корупціонерів з посад. Самі не підуть, бо нема гідності. Тому Карфаген має бути зруйнований</p>
+
+          <details class="log">
+            <summary><img class="icon" src="/images/icon-phosphor-16x16-log.svg" width="16" height="16" alt="Log icon"></summary>
+            <p>
+              Дата і час:
+              <br>2026-09-06, неділя
+              <br>13:59 EEST
+            </p>
+            <p>
+              Локація:
+              <br>Київ, Україна
+            </p>
+            <p>
+              В навушниках:
+              <br><a href="https://orbitalofficial.bandcamp.com/track/halcyon-on-on">Orbital - Halcyon + On + On</a></p>
+          </details>
+
+        </article>
+
+        <article>
+
+          <p>Подивився <a href="/notes/movies">фільм</a> “Wonder Woman 1984” (2020)
+          <span class="rating">
+            <img class="icon" src="/images/icon-phosphor-16x16-star-filled.svg" width="16" height="16" alt="Filled star icon">
+            <img class="icon" src="/images/icon-phosphor-16x16-star-filled.svg" width="16" height="16" alt="Filled star icon">
+            <img class="icon" src="/images/icon-phosphor-16x16-star-filled.svg" width="16" height="16" alt="Filled star icon">
+            <img class="icon" src="/images/icon-phosphor-16x16-star-empty.svg" width="16" height="16" alt="Empty star icon">
+            <img class="icon" src="/images/icon-phosphor-16x16-star-empty.svg" width="16" height="16" alt="Empty star icon"></span></p>
+
+          <p>Нещодавно дізнався, що я пропустив майже все явище під назвою DC Extended Universe</p>
+
+          <details class="log">
+            <summary><img class="icon" src="/images/icon-phosphor-16x16-log.svg" width="16" height="16" alt="Log icon"></summary>
+            <p>
+              Дата:
+              <br>2026-09-05 13:40 EEST
+            </p>
+            <p>
+              Локація:
+              <br>Київ, Україна
+            </p>
+            <p>
+              В навушниках:
+              <br><a href="https://apollorecords.bandcamp.com/track/xtal">Aphex Twin - Xtal</a></p>
+          </details>
+
+        </article>
+
+        <article>
+
+          <p>За останній місяць дізнався багато про <a href="https://en.wikipedia.org/wiki/Z_shell">zsh</a> (Z shell) - оболонку, що використовується в macOS. В якомусь відео на YouTube щодо налаштування чергового сервісу для свого Raspberry Pi 5 побачив незвичний вигляд терміналу macOS. Захотів налаштувати і собі через <code>~/.zshrc</code>. Наразі маю таку версію:</p>
+
+          <pre># Display custom prompt (on the left side)
 PROMPT='%(?.%{%F{green}%}●%{%f%}.%{%F{red}%}●%{%f%}) %F{250}%D{%H:%M:%S}%f %F{250}%D{%Y-%m-%d}%f'\
 $'\n'$'\n'$'\n''%F{243}%m %f'\
 $'\n''%F{white}%K{blue} %~ %k%f'\
-$'\n''%{%F{blue}%}%{%f%} '</pre></span>
-          <span class="item"><a href="/images/20260904-zsh.png"><img class="screenshot" src="/images/20260904-zsh.png" alt="Вікно терміналу macOS з налаштованим виглядом Z shell" width="877" height="861"></a></span>
-          <span class="item">Неймовірна щільність спеціальних символів у якості коду</span>
-          <span class="item">Виявляється, що налаштувань доволі багато, а ще є і alias - власні скорочення для виклику команд</span>
-          <details class="details-log">
-            <summary><img src="/images/icon-phosphor-16x16-log.svg" width="16" height="16" alt="Log icon"></summary>
-            <p>Дата:
-            <br>2026-09-04 15:21 EEST</p>
-            <p>Локація:
-            <br>Київ, Україна</p>
-            <p>В навушниках:
-            <br><a href="https://function-inf-ny.bandcamp.com/track/november-29">Function - November 29</a></p>
-            <p>Настрій:
-            <br>Тішуся, бо є хоча б середня продуктивність</p>
-          </details>
-        </p>
+$'\n''%{%F{blue}%}%{%f%} '</pre>
 
-        <p>
-          <span class="item">Передивився <a href="/notes/movies">фільм</a> “Wonder Woman” (2017)</span>
-          <details class="details-log">
-            <summary><img src="/images/icon-phosphor-16x16-log.svg" width="16" height="16" alt="Log icon"></summary>
-            <p>Дата:
-            <br>2026-09-02 02:28 EEST</p>
-            <p>Локація:
-            <br>Київ, Україна</p>
-            <p>Настрій:
-            <br>Пережити харчове отруєння</p>
+          <p><a href="/images/20260904-zsh.png"><img class="screenshot" src="/images/20260904-zsh.png" alt="Вікно терміналу macOS з налаштованим виглядом Z shell" width="877" height="861"></a></p>
+
+          <p>Неймовірна щільність спеціальних символів у якості коду</p>
+
+          <p>Виявляється, що налаштувань доволі багато, а ще є і alias - власні скорочення для виклику команд</p>
+
+          <details class="log">
+            <summary><img class="icon" src="/images/icon-phosphor-16x16-log.svg" width="16" height="16" alt="Log icon"></summary>
+            <p>
+              Дата:
+              <br>2026-09-04 15:21 EEST
+            </p>
+            <p>
+              Локація:
+              <br>Київ, Україна
+            </p>
+            <p>
+              В навушниках:
+              <br><a href="https://function-inf-ny.bandcamp.com/track/november-29">Function - November 29</a>
+            </p>
+            <p>
+              Настрій:
+              <br>Тішуся, бо є хоча б середня продуктивність
+            </p>
           </details>
-        </p>
+
+        </article>
+
+        <article>
+
+          <p>Передивився <a href="/notes/movies">фільм</a> “Wonder Woman” (2017)
+          <span class="rating">
+            <img class="icon" src="/images/icon-phosphor-16x16-star-filled.svg" width="16" height="16" alt="Filled star icon">
+            <img class="icon" src="/images/icon-phosphor-16x16-star-filled.svg" width="16" height="16" alt="Filled star icon">
+            <img class="icon" src="/images/icon-phosphor-16x16-star-filled.svg" width="16" height="16" alt="Filled star icon">
+            <img class="icon" src="/images/icon-phosphor-16x16-star-empty.svg" width="16" height="16" alt="Empty star icon">
+            <img class="icon" src="/images/icon-phosphor-16x16-star-empty.svg" width="16" height="16" alt="Empty star icon">
+            </span></p>
+
+          <details class="log">
+            <summary><img class="icon" src="/images/icon-phosphor-16x16-log.svg" width="16" height="16" alt="Log icon"></summary>
+            <p>
+              Дата:
+              <br>2026-09-02 02:28 EEST
+            </p>
+            <p>
+              Локація:
+              <br>Київ, Україна
+            </p>
+            <p>
+              Настрій:
+              <br>Пережити харчове отруєння
+            </p>
+          </details>
+
+        </article>
  
-        <p>
-          <span class="item">Додав метадані до записів/records в журнал змін. Активується по кліку на іконку з зображенням колоди, яку взяв з улюбленого ресурса <a href="https://phosphoricons.com/?q=log&size=16&weight=bold" target="_blank">Phosphor Icons</a>. Використав HTML-тег <code>&lt;details&gt;</code></span>
-          <details class="details-log">
-            <summary><img src="/images/icon-phosphor-16x16-log.svg" width="16" height="16" alt="Log icon"></summary>
-            <p>Дата:
-            <br>2026-08-31 18:08 EEST</p>
-            <p>Локація:
-            <br>Київ, Україна</p>
-            <p>В навушниках:
-            <br><a href="https://kr3stevebicknell.bandcamp.com/album/several-streams-of-thought-remixes">Steve Bicknell - The Reassurance Ritual [Rrose Remix]</a></p>
-            <p>Настрій:
-            <br>Частково в фармакологічному тумані</p>
-          </details>
-        </p>
+        <article>
 
-        <p>
-          <span class="item">Москалі продовжують тероризувати нас. Тепер їх тактика це безперервні атаки по одному БПЛА, як це відбувається в Харкові.</span>
-          <span class="item">Сьогодні подумав про іронічний сценарій, коли терористи за допомогою нових моделей розробляють онкологію, що передається як інфекція. Вчені у відчаї надають іншій моделі необмежений доступ до інфраструктури, щоб впоратися з епідемією, і ця модель вирішує знищити все живе на планеті. Які часи, такі і думки.</span>
-          <details class="details-log">
-            <summary><img src="/images/icon-phosphor-16x16-log.svg" width="16" height="16" alt="Log icon"></summary>
-            <p>Дата:
-            <br>2026-08-29 00:15 EEST</p>
-            <p>Локація:
-            <br>Київ, Україна
-            <p>В навушниках:
-            <br><a href="https://inigokennedy.bandcamp.com/track/saturnine">Inigo Kennedy - Saturnine</a></p>
-            <p>Настрій:
-            <br>Не дуже</p>
-          </details>
-        </p>
+          <p>Додав метадані до записів/records в журнал змін. Активується по кліку на іконку з зображенням колоди, яку взяв з улюбленого ресурса <a href="https://phosphoricons.com/?q=log&size=16&weight=bold" target="_blank">Phosphor Icons</a>. Використав HTML-тег <code>&lt;details&gt;</code></p>
 
-        <p>
-          <span class="item">
-            Додав банер Raspberry Pi:
-          </span>
-          <span class="item">
-            <img src="/images/banner-88x31-raspberry-pi.png" width="88" height="31" alt="Supported by Raspberry Pi 5">
-          </span>
-          <span class="item">
-            Плата Pi 5 в мене з’явилася два тижні тому, і я активно вивчаю її використання. Шрифт: <a href="https://github.com/scfried/soft-type-micro">Micro5</a>. До речі, всі поточні банери окрім IndieWeb я зробив вручну. Мабуть, треба буде зробити окрему нотатку про це
-          </span>
-          <details class="details-log">
-            <summary><img src="/images/icon-phosphor-16x16-log.svg" width="16" height="16" alt="Log icon"></summary>
-            <p>Дата:
-            <br>2026-08-24 21:27 EEST</p>
-            <p>Локація:
-            <br>Київ, Україна</p>
+          <details class="log">
+            <summary><img class="icon" src="/images/icon-phosphor-16x16-log.svg" width="16" height="16" alt="Log icon"></summary>
+            <p>
+              Дата:
+              <br>2026-08-31 18:08 EEST
+            </p>
+            <p>
+              Локація:
+              <br>Київ, Україна
+            </p>
+            <p>
+              В навушниках:
+              <br><a href="https://kr3stevebicknell.bandcamp.com/album/several-streams-of-thought-remixes">Steve Bicknell - The Reassurance Ritual [Rrose Remix]</a>
+            </p>
+            <p>
+              Настрій:
+              <br>Частково в фармакологічному тумані
+            </p>
           </details>
-        </p>
 
-        <p>
-          <span class="item">
-            Сьогодні 35-та річниця незалежності України від москалів. Слава Героям
-          </span>
-          <details class="details-log">
-            <summary><img src="/images/icon-phosphor-16x16-log.svg" width="16" height="16" alt="Log icon"></summary>
-            <p>Дата:
-            <br>2026-08-24 13:21 EEST
-            <p>Локація:
-            <br>Київ, Україна</p>
-          </details>
-        </p>
+        </article>
 
-        <p>
-          <span class="item">Оновив структуру та стилі сайту, почав все наново</span>
-          <details class="details-log">
-            <summary><img src="/images/icon-phosphor-16x16-log.svg" width="16" height="16" alt="Log icon"></summary>
-            <p>Дата:
-            <br>2026-08-23 19:41 EEST
-            <p>Локація:
-            <br>Київ, Україна</p>
+        <article>
+
+          <p>Москалі продовжують тероризувати нас. Тепер їх тактика це безперервні атаки по одному БПЛА, як це відбувається в Харкові.</p>
+
+          <p>Сьогодні подумав про іронічний сценарій, коли терористи за допомогою нових моделей розробляють онкологію, що передається як інфекція. Вчені у відчаї надають іншій моделі необмежений доступ до інфраструктури, щоб впоратися з епідемією, і ця модель вирішує знищити все живе на планеті. Які часи, такі і думки.</p>
+
+          <details class="log">
+            <summary><img class="icon" src="/images/icon-phosphor-16x16-log.svg" width="16" height="16" alt="Log icon"></summary>
+            <p>
+              Дата:
+              <br>2026-08-29 00:15 EEST
+            </p>
+            <p>
+              Локація:
+              <br>Київ, Україна
+            </p>
+            <p>
+              В навушниках:
+              <br><a href="https://inigokennedy.bandcamp.com/track/saturnine">Inigo Kennedy - Saturnine</a>
+            </p>
+            <p>
+              Настрій:
+              <br>Не дуже
+            </p>
           </details>
-        </p>
+
+        </article>
+
+        <article>
+
+          <p>Додав банер Raspberry Pi:</p>
+
+          <p><img src="/images/banner-88x31-raspberry-pi.png" width="88" height="31" alt="Supported by Raspberry Pi 5"></p>
+
+          <p>Плата Pi 5 в мене з’явилася два тижні тому, і я активно вивчаю її використання. Шрифт: <a href="https://github.com/scfried/soft-type-micro">Micro5</a>. До речі, всі поточні банери окрім IndieWeb я зробив вручну. Мабуть, треба буде зробити окрему нотатку про це</p>
+
+          <details class="log">
+            <summary><img class="icon" src="/images/icon-phosphor-16x16-log.svg" width="16" height="16" alt="Log icon"></summary>
+            <p>
+              Дата:
+              <br>2026-08-24 21:27 EEST
+            </p>
+            <p>
+              Локація:
+              <br>Київ, Україна
+            </p>
+          </details>
+
+        </article>
+
+        <article>
+
+          <p>Сьогодні 35-та річниця незалежності України від москалів. Слава Україні!</p>
+
+          <details class="log">
+            <summary><img class="icon" src="/images/icon-phosphor-16x16-log.svg" width="16" height="16" alt="Log icon"></summary>
+            <p>
+              Дата:
+              <br>2026-08-24 13:21 EEST
+            </p>
+            <p>
+              Локація:
+              <br>Київ, Україна
+            </p>
+          </details>
+
+        </article>
+
+        <article>
+
+          <p>Оновив структуру та стилі сайту, почав все наново</p>
+
+          <details class="log">
+            <summary><img class="icon" src="/images/icon-phosphor-16x16-log.svg" width="16" height="16" alt="Log icon"></summary>
+            <p>
+              Дата:
+              <br>2026-08-23 19:41 EEST
+            </p>
+            <p>
+              Локація:
+              <br>Київ, Україна
+            </p>
+          </details>
+
+        </article>
 
       </article>
+
     </main>
 
     <hr>
 
     <footer>
-      <a href="https://www.sternenkofund.org/en" target="_blank"><img src="/images/banner-88x31-sternenko.png" alt=""Sternenko Community" Charitable Foundation" width="88" height="31"></a>
-      <a href="/notatky/pro-format-zapysu-daty/" target="_blank"><img src="/images/banner-88x31-iso-8601.png" width="88" height="31" alt="ISO 8601 date format"></a>
+
+      <a href="https://www.sternenkofund.org/en" target="_blank"><img src="/images/banner-88x31-sternenko.png" alt="Sternenko Community Charitable Foundation" width="88" height="31"></a>
+      <a href="/notes/about-date-format/" target="_blank"><img src="/images/banner-88x31-iso-8601.png" width="88" height="31" alt="ISO 8601 date format"></a>
       <a href="https://www.raspberrypi.com" target="_blank"><img src="/images/banner-88x31-raspberry-pi.png" width="88" height="31" alt="Supported by Raspberry Pi 5"></a>
       <a href="https://indieweb.org/why" target="_blank"><img src="/images/banner-88x31-indieweb.png" width="88" height="31" alt="IndieWeb initiative"></a>
       <img src="/images/banner-88x31-macos-sequoia.png" width="88" height="31" alt="macOS Sequoia user">
-      <a href="https://vivaldi.com" target="_blank"><img src="/images/banner-88x31-vivaldi.png" width="88" height="31" alt="Use Vivladi browser"></a>
+      <a href="https://vivaldi.com" target="_blank"><img src="/images/banner-88x31-vivaldi.png" width="88" height="31" alt="Use Vivaldi browser"></a>
       <a href="https://docs.github.com/en/pages" target="_blank"><img src="/images/banner-88x31-github-pages.png" width="88" height="31" alt="Powered by GitHub Pages"></a>
       <a href="https://uaro.org.ua" target="_blank"><img src="/images/banner-88x31-uaro.png" width="88" height="31" alt="Громадська організація “Оператори аматорських радіостанцій України”"></a>
       <a href="https://claude.ai" target="_blank"><img src="/images/banner-88x31-claude.png" width="88" height="31" alt="Consulted with Claude"></a>
@@ -183,7 +304,7 @@ $'\n''%{%F{blue}%}%{%f%} '</pre></span>
 
       <hr>
 
-      <p class="dimmed">2125 &copy; ТОВ ФОП ОСББ РНОКПП "Нескінченний запит"<br>
+      <p class="dimmed">2125 &copy; ТОВ ФОП ОСББ РНОКПП “Нескінченний запит”<br>
       d2<img class="icon" src="/images/icon-phosphor-16x16-at.svg" alt="">n1n1n.com</p>
 
     </footer>
