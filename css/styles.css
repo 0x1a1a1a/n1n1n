@@ -1,6 +1,10 @@
 :root {
   --bg: #f8f8f8;
-  --text: #202020;
+  --text: #303030;
+  --card: #fcfcfc;
+  --accent: #0000ee;
+  --dimmed: #808080;
+
 }
 
 *,
@@ -36,6 +40,7 @@
 body {
   font-family: "Cascadia Code Italic", monospace;
   font-weight: 400;
+  font-style: italic;
   font-size: 14px;
   line-height: 1.5;
   color: var(--text);
@@ -50,15 +55,29 @@ body {
 }
 
 a {
-  color: #0000ee;
-}
-
-a:hover {
-  text-decoration: none;
+  color: var(--accent);
+  padding: 2px 3px;
+  margin: 0 -3px;
 }
 
 a:visited {
   color: #0000ee;
+}
+
+a:hover {
+  background-color: var(--accent);
+  color: #ffffff;
+  text-decoration: none;
+  padding: 2px 4px;
+  margin: 0 -4px;
+}
+
+a:visited:hover {
+  background-color: #0000ee;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 2px 4px;
+  margin: 0 -4px;
 }
 
 h1 {
@@ -81,7 +100,7 @@ h1 {
 }
 
 .tagline {
-  color: #808080;
+  color: var(--dimmed);
 }
 
 h2 {
@@ -117,7 +136,7 @@ code {
 pre {
   margin: 16px 0;
   padding: 8px 12px;
-  border-radius: 8px;
+  border-radius: 4px;
   background: #f0f0f0;
   font-family: "Cascadia Code Regular", monospace;
   font-style: normal;
@@ -127,9 +146,9 @@ pre {
 }
 
 ul {
-  list-style-type: none;
+  list-style-type: disc;
   margin-top: 0;
-  padding-inline-start: 0em;
+  padding-inline-start: 1em;
 }
 
 li {
@@ -180,9 +199,9 @@ li + li {
 
 
 header, main > article {
-  background: #fcfcfc;
-  border: 3px solid #ffffff;
-  border-radius: 12px;
+  background: var(--card);
+  border: 4px solid #ffffff;
+  border-radius: 24px;
   padding: 12px 16px 24px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
@@ -212,8 +231,22 @@ nav .item {
 
 nav a:hover {
   background: none;
-  color: #0000ee;
+}
+
+nav a:hover .label {
+  background-color: var(--accent);
+  color: #ffffff;
   text-decoration: none;
+  padding: 2px 4px;
+  margin: 0 -4px;
+}
+
+nav a:hover:visited .label {
+  background-color: #0000ee;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 2px 4px;
+  margin: 0 -4px;
 }
 
 section, footer {
@@ -232,6 +265,12 @@ img {
 
 .icon {
   vertical-align: -0.2em;
+  color: var(--dimmed);
+}
+
+.image, .image:hover {
+  background: transparent;
+  text-decoration: none;
 }
 
 .rating {
@@ -242,20 +281,20 @@ img {
 /* Для скріншотів */
 
 .screenshot {
-  border: 4px solid #ccc;
-  border-radius: 8px;
+  border: 2px solid #101010;
+  border-radius: 4px;
 }
 
 /* Для елементів в підвалі */
 
 .dimmed {
-  color: #a0a0a0;
+  color: var(--dimmed);
 }
 
 /* Для блоку метаданих */
 
 .log {
-  margin: 16px 0 64px;
+  margin: 8px 0 48px;
   text-align: left;
 }
 
@@ -264,6 +303,7 @@ img {
   text-decoration: none;
   cursor: pointer;
   list-style: none;
+  border-bottom: 1px dotted;
 }
 
 .log summary::-webkit-details-marker {
@@ -276,9 +316,22 @@ img {
   width: 240px;
   margin: 8px 0 0;
   padding: 12px;
-  border-radius: 8px;
+  border-radius: 12px;
   background: #fdfdfd;
   border: 3px solid #ffffff;
-  font-size: 0.85em;
+  font-size: 0.9em;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.log .label {
+  color: var(--dimmed);
+  font-size: 0.9em;
+}
+
+.button-icon {
+  color: var(--dimmed);
+}
+
+.button-icon:hover {
+  color: var(--text);
 }

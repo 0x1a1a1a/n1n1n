@@ -36,9 +36,9 @@
       <p class="tagline">Віртуальний садочок універсального спеціаліста</p>
 
       <nav>
-        <p class="item"><img class="icon" src="/images/icon-win31-200x200-clipboard.png" width="48" height="48" alt="Журнал змін"><a href="/">Журнал змін</a></p>
-        <p class="item"><img class="icon" src="/images/icon-win31-200x200-desktop.png" width="48" height="48" alt="Нотатки"><a href="/notes/">Нотатки</a></p>
-        <p class="item"><img class="icon" src="/images/icon-win31-200x200-globe.png" width="48" height="48" alt="Вподобане"><a href="/liked/">Вподобане</a></p>
+        <p class="item"><a href="/"><img class="icon" src="/images/icon-win31-200x200-clipboard.png" width="48" height="48" alt="Журнал"><span class="label">Журнал</span></a></p>
+        <p class="item"><a href="/notes/"><img class="icon" src="/images/icon-win31-200x200-desktop.png" width="48" height="48" alt="Нотатки"><span class="label">Нотатки</span></a></p>
+        <p class="item"><a href="/liked/"><img class="icon" src="/images/icon-win31-200x200-globe.png" width="48" height="48" alt="Вподобане"><span class="label">Вподобане</span></a></p>
       </nav>
 
     </header>
@@ -57,7 +57,13 @@
 
           <p>
             <ul>
-              <li>2017 - Wonder Woman (події 1918 року, Перша світова війна)
+              <li>2017 - Wonder Woman (події 1918 року, Перша світова війна) - <span class="rating">
+            <svg class="icon" width="16" height="16"><use href="/images/icon-phosphor-16x16-star-filled.svg#icon"></use></svg>
+            <svg class="icon" width="16" height="16"><use href="/images/icon-phosphor-16x16-star-filled.svg#icon"></use></svg>
+            <svg class="icon" width="16" height="16"><use href="/images/icon-phosphor-16x16-star-filled.svg#icon"></use></svg>
+            <svg class="icon" width="16" height="16"><use href="/images/icon-phosphor-16x16-star-half.svg#icon"></use></svg>
+            <svg class="icon" width="16" height="16"><use href="/images/icon-phosphor-16x16-star-empty.svg#icon"></use></svg>
+            </span>
                 <ul>
                   <li>2026-09-03</li>
                 </ul>
@@ -67,7 +73,11 @@
                   <li>2026-09-04</li>
                 </ul>
               </li>
-              <li>2013 - Man of Steel (сучасність)</li>
+              <li>2013 - Man of Steel (сучасність)
+                <ul>
+                  <li>2026-09-08</li>
+                </ul>
+              </li>
               <li>2016 - Batman v Superman: Dawn of Justice (через 18 місяців після Man of Steel)</li>
               <li>2016 - Suicide Squad (після смерті Супермена)</li>
               <li>2017 - Justice League</li>
@@ -112,23 +122,24 @@
     <hr>
 
     <footer>
-      <a href="https://www.sternenkofund.org/en" target="_blank"><img src="/images/banner-88x31-sternenko.png" alt="Sternenko Community Charitable Foundation" width="88" height="31"></a>
-      <a href="/notes/about-date-format/" target="_blank"><img src="/images/banner-88x31-iso-8601.png" width="88" height="31" alt="ISO 8601 date format"></a>
-      <a href="https://www.raspberrypi.com" target="_blank"><img src="/images/banner-88x31-raspberry-pi.png" width="88" height="31" alt="Supported by Raspberry Pi 5"></a>
-      <a href="https://indieweb.org/why" target="_blank"><img src="/images/banner-88x31-indieweb.png" width="88" height="31" alt="IndieWeb initiative"></a>
+
+      <a class="image" href="https://www.sternenkofund.org/en" target="_blank"><img src="/images/banner-88x31-sternenko.png" alt="Sternenko Community Charitable Foundation" width="88" height="31"></a>
+      <a class="image" href="/notes/about-date-format/" target="_blank"><img src="/images/banner-88x31-iso-8601.png" width="88" height="31" alt="ISO 8601 date format"></a>
+      <a class="image" href="https://www.raspberrypi.com" target="_blank"><img src="/images/banner-88x31-raspberry-pi.png" width="88" height="31" alt="Supported by Raspberry Pi 5"></a>
+      <a class="image" href="https://indieweb.org/why" target="_blank"><img src="/images/banner-88x31-indieweb.png" width="88" height="31" alt="IndieWeb initiative"></a>
       <img src="/images/banner-88x31-macos-sequoia.png" width="88" height="31" alt="macOS Sequoia user">
-      <a href="https://vivaldi.com" target="_blank"><img src="/images/banner-88x31-vivaldi.png" width="88" height="31" alt="Use Vivaldi browser"></a>
-      <a href="https://docs.github.com/en/pages" target="_blank"><img src="/images/banner-88x31-github-pages.png" width="88" height="31" alt="Powered by GitHub Pages"></a>
-      <a href="https://uaro.org.ua" target="_blank"><img src="/images/banner-88x31-uaro.png" width="88" height="31" alt="Громадська організація “Оператори аматорських радіостанцій України”"></a>
-      <a href="https://claude.ai" target="_blank"><img src="/images/banner-88x31-claude.png" width="88" height="31" alt="Consulted with Claude"></a>
-      <a href="https://github.com/kagisearch/smallweb" target="_blank"><img src="/images/banner-88x31-kagi-small-web.png" width="88" height="31" alt="Kagi Small Web initiative"></a>
-      <a href="/rss/" target="_blank"><img src="/images/banner-88x31-rss.png" width="88" height="31" alt="RSS: Really Simple Syndication"></a>
-      <a href="https://www.w3.org" target="_blank"><img src="/images/banner-88x31-w3c.png" width="88" height="31" alt="The World Wide Web Consortium"></a>
+      <a class="image" href="https://vivaldi.com" target="_blank"><img src="/images/banner-88x31-vivaldi.png" width="88" height="31" alt="Use Vivaldi browser"></a>
+      <a class="image" href="https://docs.github.com/en/pages" target="_blank"><img src="/images/banner-88x31-github-pages.png" width="88" height="31" alt="Powered by GitHub Pages"></a>
+      <a class="image" href="https://uaro.org.ua" target="_blank"><img src="/images/banner-88x31-uaro.png" width="88" height="31" alt="Громадська організація “Оператори аматорських радіостанцій України”"></a>
+      <a class="image" href="https://claude.ai" target="_blank"><img src="/images/banner-88x31-claude.png" width="88" height="31" alt="Consulted with Claude"></a>
+      <a class="image" href="https://github.com/kagisearch/smallweb" target="_blank"><img src="/images/banner-88x31-kagi-small-web.png" width="88" height="31" alt="Kagi Small Web initiative"></a>
+      <a class="image" href="/rss/" target="_blank"><img src="/images/banner-88x31-rss.png" width="88" height="31" alt="RSS: Really Simple Syndication"></a>
+      <a class="image" href="https://www.w3.org" target="_blank"><img src="/images/banner-88x31-w3c.png" width="88" height="31" alt="The World Wide Web Consortium"></a>
 
       <hr>
 
       <p class="dimmed">2125 &copy; ТОВ ФОП ОСББ РНОКПП "Нескінченний запит"<br>
-      d2<img class="icon" src="/images/icon-phosphor-16x16-at.svg" alt="">n1n1n.com</p>
+      d2<svg class="icon" width="16" height="16"><use href="/images/icon-phosphor-16x16-at.svg#icon"></use></svg>n1n1n.com</p>
 
     </footer>
 
