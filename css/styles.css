@@ -90,17 +90,14 @@ h1 {
   animation: gradient-flow 20s linear infinite;
   font-family: "Cascadia Code Regular", monospace;
   font-feature-settings: "ss01";
-  font-size: 18px;
+  font-style: normal;
+  font-size: 24px;
   font-weight: 600;
 }
 
 @keyframes gradient-flow {
   0%   { background-position: 100% 0%; }
   100% { background-position: -100% 0%; }
-}
-
-.tagline {
-  color: var(--dimmed);
 }
 
 h2 {
@@ -248,11 +245,13 @@ img {
   display: inline-flex;
 }
 
-/* Для скріншотів */
+/* Для зображень */
 
-.screenshot {
-  border: 2px solid #101010;
-  border-radius: 4px;
+.image-border {
+  border: 4px solid transparent;
+  border-radius: 12px;
+  background: 
+    linear-gradient(90deg, red,blue, indigo, violet) border-box;
 }
 
 /* Для елементів в підвалі */
@@ -304,4 +303,19 @@ img {
 
 .button-icon:hover {
   color: var(--text);
+}
+
+.tagline {
+  color: var(--dimmed);
+  margin: 8px 0;
+}
+
+.highlight {
+  background: url('/images/pattern-leaves.svg') repeat;
+  background-size: 24px 24px;
+  color: #ffffff;
+  padding: 3px 8px;
+  margin: 0 -2px;
+  border-radius: 24px;
+  font-weight: 600;
 }
