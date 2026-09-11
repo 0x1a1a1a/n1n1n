@@ -45,6 +45,7 @@ body {
   line-height: 1.5;
   color: var(--text);
   background: var(--bg);
+  background-image: url("/images/bg.svg");
   max-width: 600px;
   margin: 0 auto;
   padding: 24px 12px;
@@ -225,10 +226,7 @@ img {
   height: auto;
 }
 
-.icon-dimmed {
-  vertical-align: -0.2em;
-  color: var(--dimmed);
-}
+
 
 .star {
   vertical-align: -0.2em;
@@ -256,8 +254,14 @@ img {
 
 /* Для елементів в підвалі */
 
-.dimmed {
-  color: var(--dimmed);
+.footer {
+  color: #505050;
+  font-size: 0.8em;
+}
+
+.icon-footer {
+  vertical-align: -0.2em;
+  color: #505050;
 }
 
 /* Для блоку метаданих */
