@@ -61,7 +61,7 @@ a {
 }
 
 a:visited {
-  color: #0000ee;
+  color: var(--accent);
 }
 
 a:hover {
@@ -73,7 +73,7 @@ a:hover {
 }
 
 a:visited:hover {
-  background-color: #0000ee;
+  background-color: var(--accent);
   color: #ffffff;
   text-decoration: none;
   padding: 2px 4px;
@@ -82,7 +82,7 @@ a:visited:hover {
 
 h1 {
   padding: 0;
-  background: linear-gradient(90deg, #fcfcfc, #101010, #fcfcfc);
+  background: linear-gradient(90deg, #fcfcfc, var(--text), #fcfcfc);
   background-size: 200% 100%;
   -webkit-background-clip: text;
   background-clip: text;
@@ -107,21 +107,25 @@ h2 {
   font-weight: 600;
   font-size: 18px;
   font-feature-settings: "ss01";
-  padding: 0 0 16px;
+  margin: 0 0 16px;
 }
 
 h3 {
   font-weight: 600;
   font-size: 16px;
   font-feature-settings: "ss01";
-  padding: 24px 0 8px;
+  margin: 24px 0 8px;
+}
+
+h2 + h3 {
+  margin-top: 0;
 }
 
 h4 {
   font-weight: 600;
   font-size: 14px;
   font-feature-settings: "ss01";
-  padding: 0 0 16px;
+  margin: 0 0 16px;
 }
 
 code {
@@ -208,7 +212,7 @@ nav a:hover .label {
 }
 
 nav a:hover:visited .label {
-  background-color: #0000ee;
+  background-color: var(--accent);
   color: #ffffff;
   text-decoration: none;
   padding: 2px 4px;
@@ -246,6 +250,14 @@ img {
 .rating {
   vertical-align: -0.15em;
   display: inline-flex;
+}
+
+.tbd {
+  background: #6666ff;
+  color: #ffffff;
+  padding: 2px 4px;
+  border-radius: 4px;
+  font-size: 0.8em;
 }
 
 /* Для зображень */
