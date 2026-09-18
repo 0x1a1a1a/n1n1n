@@ -182,7 +182,7 @@ pre {
 
 ul {
   list-style-type: disc;
-  margin-top: 8px;
+  margin: 8px 0;
   padding-inline-start: 1em;
 }
 
