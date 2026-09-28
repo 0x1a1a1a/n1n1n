@@ -1,8 +1,8 @@
 :root {
-  --bg: #e0e0e0;
+  --bg: #f0f0f0;
   --text: #303030;
-  --card: #e0e0e0;
-  --card-border: #f0f0f0;
+  --card: #f0f0f0;
+  --card-border: #ffffff;
   --accent: #0000e0;
   --dimmed: #808080;
 }
@@ -62,7 +62,7 @@ header, main {
   padding: 12px 16px 16px;
   background: var(--card);
   border-radius: 24px;
-  border: 1px solid var(--card-border);
+  border: 2px solid var(--card-border);
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1),
               0px 6px 16px rgba(0, 0, 0, 0.05);
 }
@@ -79,7 +79,7 @@ article {
   padding: 12px 16px;
   background: var(--card);
   border-radius: 12px;
-  border: 1px solid var(--card-border);
+  border: 2px solid var(--card-border);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
