@@ -67,14 +67,6 @@ header, main {
               0px 6px 16px rgba(0, 0, 0, 0.05);
 }
 
-nav {
-  display: flex;
-  gap: 32px;
-  flex-wrap: wrap;
-  padding: 8px 0 8px;
-  justify-content: flex-start;
-}
-
 article {
   padding: 12px 16px;
   background: var(--card);
@@ -155,7 +147,7 @@ h4 {
 code {
   padding: 1px 4px;
   border-radius: 4px;
-  background: #eaeaea;
+  background: #dadada;
   font-family: "Cascadia Code Regular", monospace;
   font-style: normal;
   font-weight: 400;
@@ -165,7 +157,7 @@ pre {
   margin: 16px 0;
   padding: 8px 12px;
   border-radius: 8px;
-  background: #f0f0f0;
+  background: #dadada;
   font-family: "Cascadia Code Regular", monospace;
   font-style: normal;
   font-weight: 400;
@@ -204,6 +196,14 @@ img {
 
 
 /* Menu block */
+
+nav {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+  padding: 16px 0 8px;
+  justify-content: flex-start;
+}
 
 nav .item {
   display: flex;
@@ -274,7 +274,7 @@ nav a:hover:visited .label {
   padding: 12px;
   border-radius: 8px;
   background: var(--card);
-  border: 1px solid var(--card-border);
+  border: 2px solid var(--card-border);
   font-size: 0.9em;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
@@ -304,11 +304,38 @@ footer {
 
 /* Інше */
 
-.button-icon {
+.chip-green {
+  display: inline-block;
+  margin: 2px 0;
+  padding: 2px 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 4px;
+  border-color: #00bb00;
+  color: #00bb00;
+  font-family: "Cascadia Code Regular", monospace;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.9em;
+}
+
+.minibutton-link,
+.minibutton-link:visited,
+.minibutton-link:hover,
+.minibutton-link:visited:hover {
+  
+  background: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+.minibutton-icon {
+  margin: 8px 0;
   color: var(--dimmed);
 }
 
-.button-icon:hover {
+.minibutton-icon:hover {
   color: var(--text);
 }
 
@@ -329,7 +356,10 @@ footer {
   vertical-align: -0.2em;
 }
 
-.image, .image:hover {
+.image,
+.image:hover,
+.image:visited,
+.image.visited:hover {
   background: transparent;
   text-decoration: none;
 }
