@@ -315,12 +315,10 @@ footer {
   border-color: #00bb00;
   background: #00bb00;
   color: #ffffff;
-  -webkit-text-size-adjust: 100%;
-  text-size-adjust: 100%;
   font-family: "Cascadia Code Regular", monospace;
   font-style: normal;
   font-weight: 400;
-  font-size: 8px;
+  font-size: 0.5rem;
 }
 
 .minibutton-link,
