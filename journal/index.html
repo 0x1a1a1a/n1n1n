@@ -38,10 +38,14 @@
 
       <p class="tagline">Віртуальний садочок<svg class="icon-inline" width="16" height="16"><use href="/images/icon-phosphor-16x16-plant.svg#icon"></use></svg> універсального спеціаліста</p>
 
+      <p>
+        <span class="chip-green">Підтримується вручну</span> <span class="chip-green">Без JavaScript</span> <span class="chip-green">Без попапів та банерів, що треба закривати</span> <span class="chip-green">Без реклами</span> <span class="chip-green">Без згенерованого контенту</span> <span class="chip-green">Без москальської</span>
+      </p>
+
       <nav>
         <p class="item"><a href="/"><img src="/images/icon-win31-200x200-desktop.png" width="48" height="48" alt="Нотатки"><span class="label">Нотатки</span></a></p>
         <p class="item"><a href="/journal/"><img src="/images/icon-win31-200x200-clipboard.png" width="48" height="48" alt="Журнал"><span class="label">Журнал</span></a></p>
-        <p class="item"><a href="/liked/"><img src="/images/icon-win31-200x200-globe.png" width="48" height="48" alt="Вподобане"><span class="label">Вподобане</span></a></p>
+        <p class="item" style="display: none;"><img src="/images/icon-win31-200x200-globe.png" width="48" height="48" alt="Вподобане"><span class="label">Вподобане</span></p>
       </nav>
 
     </header>
@@ -51,6 +55,46 @@
     <main>
 
       <h2>Журнал</h2>
+
+      <article>
+
+        <a class="minibutton-link" href="/journal/2026-10-10/1/">
+          <svg class="minibutton-icon" width="16" height="16">
+            <use href="/images/icon-phosphor-16x16-link.svg#icon"></use>
+          </svg>
+        </a>
+      
+        <p>Уперше <a href="/notes/watched/">подивився</a> “Evangelion: 3.0+1.0 Thrice Upon a Time” (2021). Розмитий сценарій і фінал, неякісна та недоречна 3D-графіка, заплутаність заради заплутаності
+          <span class="rating">
+            <svg class="icon-star" width="16" height="16"><use href="/images/icon-phosphor-16x16-star-filled.svg#icon"></use></svg>
+            <svg class="icon-star" width="16" height="16"><use href="/images/icon-phosphor-16x16-star-filled.svg#icon"></use></svg>
+            <svg class="icon-star" width="16" height="16"><use href="/images/icon-phosphor-16x16-star-filled.svg#icon"></use></svg>
+            <svg class="icon-star" width="16" height="16"><use href="/images/icon-phosphor-16x16-star-empty.svg#icon"></use></svg>
+            <svg class="icon-star" width="16" height="16"><use href="/images/icon-phosphor-16x16-star-empty.svg#icon"></use></svg>
+          </span>
+        </p>
+        <details class="metadata">
+          <summary><svg class="minibutton-icon" width="16" height="16"><use href="/images/icon-phosphor-16x16-log.svg#icon"></use></svg></summary>
+          <p>
+            <span class="label">Дата і час</span>
+            <br>2026-10-10, субота
+            <br>01:44 EEST
+          </p>
+          <p>
+            <span class="label">Локація</span>
+            <br>Київ, Україна
+          </p>
+          <p>
+            <span class="label">Настрій</span>
+            <br>Втомлений
+          </p>
+          <p>
+            <span class="label">В навушниках</span>
+            <br><a href="https://claudioprc.bandcamp.com/track/traces" target="_blank">Claudio PRC - Traces<svg width="12" height="12"><use href="/images/icon-phosphor-16x16-out.svg#icon"></use></svg></a>
+          </p>
+        </details>
+      
+      </article>
 
       <article>
 
@@ -135,7 +179,7 @@
           </svg>
         </a>
       
-        <p>Подивився <a href="/notes/movies/">фільм</a> всесвіту DCEU “Aquaman” (2018)</p>
+        <p>Подивився <a href="/notes/watched/">фільм</a> всесвіту DCEU “Aquaman” (2018)</p>
 
         <details class="metadata">
           <summary><svg class="minibutton-icon" width="16" height="16"><use href="/images/icon-phosphor-16x16-log.svg#icon"></use></svg></summary>
@@ -168,7 +212,7 @@
           </svg>
         </a>
       
-        <p>Подивився <a href="/notes/movies/">фільм</a> всесвіту DCEU “Zack Snyder’s Justice League” (2021)</p>
+        <p>Подивився <a href="/notes/watched/">фільм</a> всесвіту DCEU “Zack Snyder’s Justice League” (2021)</p>
 
         <details class="metadata">
           <summary><svg class="minibutton-icon" width="16" height="16"><use href="/images/icon-phosphor-16x16-log.svg#icon"></use></svg></summary>
@@ -201,7 +245,7 @@
           </svg>
         </a>
 
-        <p>Подивився <a href="/notes/movies/">фільм</a> всесвіту DCEU “Batman v Superman: Dawn of Justice” (2016)</p>
+        <p>Подивився <a href="/notes/watched/">фільм</a> всесвіту DCEU “Batman v Superman: Dawn of Justice” (2016)</p>
 
         <details class="metadata">
           <summary><svg class="minibutton-icon" width="16" height="16"><use href="/images/icon-phosphor-16x16-log.svg#icon"></use></svg></summary>
@@ -404,7 +448,7 @@
           </svg>
         </a>
 
-        <p>Продовжив знайомство з DCEU та подивився <a href="/notes/movies/">фільм</a> “Man of Steel” (2013)</p>
+        <p>Продовжив знайомство з DCEU та подивився <a href="/notes/watched/">фільм</a> “Man of Steel” (2013)</p>
         <p>Минулої ночі був черговий масований обстріл москалями балістикою Києва</p>
         <p>Як завжди від балістики, дуже гучні вибухи, підлога рухалась, намагався спати в коридорі між серіями обстрілів</p>
         <p>Снилося, що війна триває із зомбі, які еволюціонували та навчились запускати ракети</p>
@@ -509,7 +553,7 @@
           </svg>
         </a>
 
-        <p>Подивився <a href="/notes/movies/">фільм</a> “Wonder Woman 1984” (2020)
+        <p>Подивився <a href="/notes/watched/">фільм</a> “Wonder Woman 1984” (2020)
           <span class="rating">
             <svg class="icon-star" width="16" height="16"><use href="/images/icon-phosphor-16x16-star-filled.svg#icon"></use></svg>
             <svg class="icon-star" width="16" height="16"><use href="/images/icon-phosphor-16x16-star-filled.svg#icon"></use></svg>
@@ -599,7 +643,7 @@ $'\n''%{%F{blue}%}%{%f%} '</pre>
           </svg>
         </a>
 
-        <p>Передивився <a href="/notes/movies/">фільм</a> “Wonder Woman” (2017)
+        <p>Передивився <a href="/notes/watched/">фільм</a> “Wonder Woman” (2017)
           <span class="rating">
             <svg class="icon-star" width="16" height="16"><use href="/images/icon-phosphor-16x16-star-filled.svg#icon"></use></svg>
             <svg class="icon-star" width="16" height="16"><use href="/images/icon-phosphor-16x16-star-filled.svg#icon"></use></svg>

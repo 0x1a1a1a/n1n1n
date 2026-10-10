@@ -1,0 +1,5 @@
+=============================
+Посилання на зовнішній ресурс
+=============================
+
+<a href="" target="_blank"><svg width="12" height="12"><use href="/images/icon-phosphor-16x16-out.svg#icon"></use></svg>

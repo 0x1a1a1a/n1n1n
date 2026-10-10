@@ -18,6 +18,9 @@
   padding: 0;
 }
 
+html {
+  font-size: 100%;
+}
 
 /* Importing custom font (Cascadia Code) */
 
@@ -166,25 +169,6 @@ pre {
   word-break: break-word;
 }
 
-ul {
-  list-style-type: disc;
-  margin: 8px 0;
-  padding-inline-start: 1em;
-}
-
-.ul-orphan {
-  margin-top: 0px;
-}
-
-li {
-  padding-left: 1em;
-  text-indent: -1em;
-}
-
-li + li {
-  margin-top: 8px;
-}
-
 hr {
   border: none;
   margin: 8px 0;
@@ -193,6 +177,42 @@ hr {
 img {
   max-width: 100%;
   height: auto;
+}
+
+
+/* Марковані списки */
+
+ul {
+  list-style-type: disc;
+  margin: 0.5em 0;
+  padding-inline-start: 1em;
+}
+
+.ul-orphan {
+  margin-top: 0;
+}
+
+li {
+  padding-left: 1em;
+  text-indent: -1em;
+}
+
+li + li {
+  margin-top: 0.5em;
+}
+
+.list-tabs-level-1 {
+  margin: 2em 0;
+  list-style: none;
+}
+
+.list-tabs-level-1 li + li {
+  margin-top: 1.5em;
+}
+
+.list-tabs-level-2 {
+  margin-top: 0;
+  list-style: none;
 }
 
 
@@ -245,6 +265,10 @@ nav a:hover:visited .label {
   border-radius: 8px;
   background: 
     linear-gradient(90deg, red,blue, indigo, violet) border-box;
+}
+
+.image-container {
+  margin-top: 2em;
 }
 
 
@@ -317,8 +341,8 @@ footer {
   color: #ffffff;
   font-family: "Cascadia Code Regular", monospace;
   font-style: normal;
-  font-weight: 400;
-  font-size: 0.9em;
+  font-weight: 600;
+  font-size: 0.8em;
 }
 
 .minibutton-link,
